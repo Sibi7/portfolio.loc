@@ -2,13 +2,12 @@
     die( 'Forbidden' );
 }
 ?>
-<section id="front" class="front" data-parallax="scroll">
+<section id="front" class="front" style="background: url(<?= $atts['background_img']['url'] ; ?>) no-repeat 50%; background-size: cover;"  data-parallax="scroll" data-image-src="/path/to/image.jpg">
     <div class="container">
         <div class="card   row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2">
                 <div class="row">
-                    <!-- <img class="front__image img-responsive" src="http://placehold.it/1487x1765" alt=""/> -->
-                    <img class="front__image img-responsive" src="img/photo.jpg" alt=""/>
+                    <img class="front__image img-responsive" src="<?= $atts['photo']['url'] ; ?>" alt=""/>
                 </div>
             </div>
             <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-6 col-md-offset-0">
